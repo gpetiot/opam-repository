@@ -1,0 +1,31 @@
+opam-version: "2.0"
+maintainer: "Someone <someone@mail.com>"
+homepage: "me.com/dummy.html"
+bug-reports: "https://github.com/gpetiot/test-dune-release/issues"
+license: "BSD-2"
+dev-repo: "git+https://github.com/gpetiot/test-dune-release.git"
+doc: "https://gpetiot.github.io/test-dune-release"
+build: [
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
+run-test: [
+  [ "dune" "runtest" "-p" name "-j" jobs ]
+]
+depends: [
+  "dune" {build}
+  "ocaml" {>= "4.04.2"}
+]
+synopsis: "Some dummy package"
+description: """
+Test package please ignore
+"""
+x-commit-hash: "b7ccfb560ab615bd8bebad705a1711bec2a9408c"
+authors: "Someone <someone@mail.com>"
+url {
+  src:
+    "https://github.com/gpetiot/test-dune-release/releases/download/v0.1.0_TILDE_beta1/test-dune-release-v0.1.0.beta1.tbz"
+  checksum: [
+    "sha256=5e7680ee2baed750158891711452168d0e1850a9ac81be1815e4d9a9c9189bb4"
+    "sha512=47aa52c1b32c38ba9927e81cc65471b7f1eaa473c68819a2d11be1e575b4508428fe7a3eed110cc3c677fc700aaf26b4abec4147655539860dad56d9b16f4343"
+  ]
+}
